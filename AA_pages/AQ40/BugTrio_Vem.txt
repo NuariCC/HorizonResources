@@ -1,0 +1,14 @@
+|credKill order:|r Kri {rt8} -> Yauj {rt7} -> Vem {rt6}
+
+Boss positions in the room: 
+ - |cblueLeft:|r Yauj {rt7}. Tanked by {rt1}.
+ - |cblueMiddle:|r Kri {rt8}. Tanked by {rt2}.
+ - |cblueRight:|r Vem {rt6}. Tanked by {rt4} in one of the alcoves.
+
+Kri {rt8}: Cleave, |cgreenToxic Volley|r, |credDeath = Poison Cloud|r.
+Yauj {rt7}: |cwarlockAoE Fear|r (resets threat), |credHeal|r, Dispel. Death = Adds.
+Vem {rt6}: Knocks away tank, charges random player in LoS.
+
+{shaman} |cshamanShamans:|r Tremor Totem {icon spell_nature_tremortotem}, Cleansing Totem {icon spell_nature_diseasecleansingtotem}
+{healer} |cgreenHealers:|r Dispel poison and fear.
+{dps} {tank} |cdeathknightDPS|r, |cwarriorTanks:|r Don't die and interrupt Yauj's heal.

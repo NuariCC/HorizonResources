@@ -1,0 +1,20 @@
+Boss splits into |cred3 copies|r at 75%, 50%, 25%.
+
+The raid splits to the right and left stairs:
+ - |cblueRight:|r Groups 2 and 4.
+ - |cblueLeft:|r Groups 3 and 5.
+ - |cblueMiddle:|r Group 1 dps.
+
+{tank} |cwarriorTanks:
+{rt1} Middle, tanks boss {rt8}
+{rt2} Left
+{rt4} Right
+
+{healer} |cgreenHealers:
+ - Don't heal when the copies are about to spawn to avoid death by {spell 26194}!
+
+{dps} |cdeathknightDPS:
+ - Rogues and Shamans interrupt {icon ability_kick} {icon spell_nature_cyclone} every {spell 26192}!
+ - Kill the copies ASAP! All copies must be killed before the next split.
+ - {icon ability_creature_cursed_02} |credDon't kill players with Mind Control!
+ - |cmageMages|r {mage}, |cwarlockWarlocks|r {warlock} and |cdruidDruids|r {druid} CC players with Mind Control.

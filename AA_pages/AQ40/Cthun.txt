@@ -1,0 +1,36 @@
+|cbluePhase 1:|r
+      |cred0, 2, 4, ... glares|r            |          |cred1, 3, 5, ... glares|r
+ -----------------------------------------------------------
+       G4 {rt2}        G5 {rt6}                                    G1 {rt3} 
+                                             
+                  {rt8}                                                  {rt8}
+  G3 {rt1}    Boss      G2 {rt4}                 G2 {rt4}    Boss      G3 {rt1}
+                  {rt8}                                                  {rt8}
+
+               G1 {rt3}                                    G5 {rt6}        G4 {rt2}
+          |cpurpleEntrance|r                                       |cpurpleEntrance|r
+
+ - |credRange check 13yd.|cred
+ - |credBeware the Dark Glare {icon ability_creature_cursed_02}.|r Everyone rotates 180%.
+
+|cbluePhase 2:|r
+ - Move close to the room entrance and spread a bit.
+ - |crogueCC and kick|r the big eye tentacles.
+ - Snare removing abilities remove the small eyes' Mind Flay. 
+    - {shaman} |cshamanShamans:|r Improved earthbind totem.
+    - {paladin} |cpaladinPaladins:|r Hand of Freedom.
+    - etc.
+
+ - |credAlways stay in the first half of the room.|r
+   - |cdeathknightMelees|r kill small eyes that are in the first half of the room.
+   - |chunterRanged|r kill the ones in the back.
+
+  |cbluePositions when small eyes spawn:|r
+
+                           {rt7} Ranged eyes {rt7}
+                                
+  |cred--------------------|r {rt8} Boss {rt8} |cred--------------------|r
+     |chunterRanged players|r                 |chunterRanged players|r
+                           {rt7} Melee eyes {rt7}
+               |cdeathknightMelee players|r     |cdeathknightMelee players|r
+                                  |cpurpleEntrance|r

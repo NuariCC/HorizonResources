@@ -1,0 +1,16 @@
+|credThree phases:|r
+ 1. Freeze the boss (boss must take |cmage200 frost damage attacks|r).
+ 2. Shatter the boss (|crogue75 melee attacks|r).
+ 3. Kill globs (spawn around the room, move to the boss).
+ - |credRepeat|r untill the boss dies.
+
+|credImportant:|r Don't stand in the |cgreenpoison clouds|r.
+ 
+{shaman} |cshamanShamans:|r Place Cleansing Totem {icon spell_nature_diseasecleansingtotem} in the center of the room.
+
+{dps} |cdeathknightDPS:|r
+ - Use frost damage weapons, Frost Oils {icon inv_potion_20}, frost spels, etc.
+ - Kill the globs in P3. Each |credkilled|r glob reduced boss HP by |cred5%|r.
+
+{healer} |cgreenHealers:|r
+ - Dispel the groups without Cleansing Totems ASAP.

@@ -1,0 +1,12 @@
+{tank} |cwarriorTanks:|r
+ - {rt1} and {rt2} switch on the boss after |cred3 stacks of Mortal Wound|r.
+ - Taunt and tank the big worms when they spawn.
+ - Try to tank the small adds when they arrive.
+
+{dps} |cdeathknightDPS:|r
+ - |credKill priority: Big worms -> small adds -> boss {rt8}.
+ - Don't aggro the big worms, they hurt.
+ - Don't aggro the whole group of small adds, you'll die.
+
+{healer} |cgreenHealers:|r
+ - Spot heal DPS that aggro adds.

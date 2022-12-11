@@ -1,0 +1,19 @@
+- |credVek'lor:|r immune to physical damage.
+- |credVek'nilash:|r immune to magic damage.
+- Bosses can't be within 60yd of each other or they will heal.
+- |credEvery 30-40 seconds they switch places.|r
+- Keep |cblue12yd|r range when near Vek'lor (avoid |cmageblizzards|r).
+
+{tank} |cwarriorTanks:|r
+ - |cblueRight:|r {rt1} {rt2} {rt3} (Warlock tank).
+ - |cblueLeft:|r {rt4} {rt5} (Paladin tank with SR {icon spell_shadow_sealofkings}).
+ - |credSwitch|r after Unbalancing Strike (only warriors and paladins).
+
+{healer} |cgreenHealers:|r
+ - Split to two groups (left and right) based on the comp.
+
+{dps} |cdeathknightDPS:|r
+ - Melee on Vek'nilash, magic on Vek'lor.
+ - |credKill empowered bugs ASAP.|r
+ - Start running to the opposite side of the room |cred+-5s|r before the switch.
+ - Kill small bugs when running to the other side.

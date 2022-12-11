@@ -1,0 +1,20 @@
+|cbluePhase 1|r
+{tank} |cwarriorTanks:|r
+ - Boss is |credimmune to taunt|r so fight for aggro.
+ - Only the tank that has aggro is in front of the boss.
+ - |corangeSand Blast|r resets aggro if you get hit.
+
+{healer} |cgreenHealers|r and {dps} |cdeathknightDPS|r:
+ - Always stay behind the boss - visual is bugged.
+   - Pets {rt2} {rt5} are always attacking from the back.
+ - |corangeSweep|r (knockback) soon after |corangeSand Blast|r, be >= |cblue30yd|r away from the boss.
+
+|cbluePhase 2|r
+ - Boss submerges after 4 |corangeSweeps|r.
+ - |credBefore 4. Sweep run away.|r
+   - |credQuake|r spawns, run away from it and spread across the room.
+ - Kill scarabs at the end of the phase.
+
+|cbluePhase 3|r
+ - |credEnrage at 20%|r, use your cooldowns now.
+ - Quakes spawn frequently. Melees stay at max range.

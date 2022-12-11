@@ -1,0 +1,19 @@
+- |cgreenNoxious Poison|r {icon spell_nature_corrosivebreath} silences random player and everyone in |cblue15yd|r range.
+- |cgreenWyvern Sting|r {icon inv_spear_02} silences 10 players closest to the boss.
+- |cgreenPoison Bolt|r {icon spell_nature_corrosivebreath} hits 9 closest players (enrage phase).
+
+|credEveryone:|r Save CDs for the |credenrage phase (30%)|r.
+
+{tank} |cwarriorTanks:
+ - Boss stacks |cgreenNature DoT|r. Can't be dispelled.
+ - Immune to taunt.
+ - 1-2 tanks.
+
+{healer} |cgreenHealers:
+ - Position in semi-circle around to boss to reach all players. |cblue15yd|r range check.
+ - Don't dispel sleep {icon inv_spear_02} on squishies. Dispel only tanks, healers, or DPS with high HP.
+
+{dps} |cdeathknightDPS:
+ - Ranged spread in a semi-circle around to boss. |cblue15yd|r range check.
+ - |cred9-10 closest players should have 200+ NR for the enrage phase.|r Don't forget to use defensive CDs.
+ - {hunter} |chunterHunters|r must dispel Frenzy from the boss.

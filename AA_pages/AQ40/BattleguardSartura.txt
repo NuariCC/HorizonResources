@@ -1,0 +1,21 @@
+|credKill order:|r Guard {rt8} -> Guard {rt7} -> Guard {rt6} -> Boss {rt5}.
+
+{tank} |cwarriorTank assignments:|r
+ - {rt8} tanked by {rt1}.
+ - {rt7} tanked by {rt2}.
+ - {rt6} tanked by {rt3}.
+ - {rt5} tanked by {rt4}.
+
+|credPositioning:|r
+ - Spread guards and boss across the room.
+ - Players should be spread to avoid multiple deaths by Whirlwind.
+
+|cblueOverview:|r
+ - Boss and guards reset aggro randomly.
+ - All mobs are stunnable! |credStun-lock|r the current target.
+    - Stuns have diminishing returns tho.
+ - Boss and guards |credfixate on a random player and Whirlwind!|r
+
+{tank} |cwarriorTanks:|r Spread out and help with stuns.
+{dps} |cdeathknightDPS:|r Burst the guards ASAP (use CDs). Rotate stuns. Run away from Whirlwind.
+{healer} |cgreenHealers:|r Spread out to cover the whole raid. |cblueFast heals save lives.|r
