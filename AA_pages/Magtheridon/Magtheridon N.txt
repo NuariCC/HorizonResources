@@ -1,0 +1,32 @@
+Magtheridon
+|cred-------------------
+
+    G4 {rt4}  |credBoss|r  G3 {rt3}
+                  {rt8}
+
+ G5 {rt5}                   G2 {rt2}
+ 
+
+               G1 {rt1}
+          |cpurpleEntrance|r
+
+{tank} |cwarriorTanks
+|cred-------------------
+Buff: {rt1} {rt2}
+Keg: {rt3} {rt4}
+Myrep: {rt5}
+
+{dps} |crogueDPS:
+|cred-------------------
+|cblueP1|r kill order: {rt1} >>> {rt2} >>> {rt3} >>> {rt4} >>> {rt5}
+
+{icon ability_creature_cursed_02} |credP2 Cubes
+|cred-------------------
+ - G1 {rt1}: Riddi >> Vik >> Moya >> Nuari
+ - G2 {rt2}: Moguso >> Defacto >> Lyendra >> Zanzell
+ - G3 {rt3}: Ratrat >> Helpts >> Camembert >> Nigel
+ - G4 {rt4}: Emu >> Nada >> Belbereth >> Gamermag
+ - G5 {rt5}: Elesshar >> Raaru >> Zelfie >> Helwex
+
+{warlock} |cwarlockWarlocks:|r {icon spell_shadow_cripple}Banish Abyssals in |cblueP1
+{shaman} |cshamanShamans:|r {bl}Bloodlust in |cblueP2|r right after successful cubes

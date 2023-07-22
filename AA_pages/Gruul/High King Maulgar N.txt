@@ -1,0 +1,23 @@
+Kill order
+|cred-------------------
+{rt8} Blindeye the Seer: {icon spell_holy_heal}Heal, {icon spell_holy_powerwordshield}Shield, {icon spell_holy_prayerofhealing02}Prayer of Healing
+{rt7} Olm the Summoner: {icon spell_shadow_deathcoil}Death Coil, {icon spell_shadow_shadowfury}stacking DoT on {tank}, {icon spell_shadow_summonfelguard}summons Felhunter
+|credRanged only:
+{rt2} Krosh Firehand: {icon spell_holy_excorcism_02}Blast Nova |cred(15yd AoE)|r, {icon spell_fire_flamebolt}Fireball, {icon spell_arcane_arcaneresilience}Spell Shield
+{rt3} Kiggler the Crazed: {icon spell_nature_wispsplode}Arcane Explosion |cred(30yd AoE)|r, {icon spell_nature_lightning}Lightning Bolt, {icon spell_arcane_arcane04}Silence, {icon spell_nature_polymorph}Polymorph
+|credMelee:
+{rt6} High King Maulgar: {icon ability_warrior_cleave}Cleave, {icon inv_gauntlets_05}Knockback, {icon ability_whirlwind}Whirlwind |cred(AoE)|r
+    - |credEnrage|r <50%: {icon ability_golemthunderclap}Fear |cred(8yd AoE)|r + {icon ability_warrior_charge}Charge
+
+{tank} |cwarriorTanks:
+|cred-------------------
+{rt8} (stack with {rt7}): |cpaladinMyrep
+{rt7} (stack with {rt8}): |cwarriorAshoganky
+{rt6} (near the entrance): |cwarriorBuff
+{rt2} (tank where he stands): |cmageZelfie
+{rt3} (tank where he stands): |cdruidRatrat
+
+{dps} |crogueMelee DPS:
+|cred-------------------
+{icon ability_creature_cursed_02} Don't go near {rt2} or {rt3}
+{icon ability_creature_cursed_02} Run away from {rt6} whirlwind

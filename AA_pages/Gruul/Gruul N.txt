@@ -1,0 +1,29 @@
+Healers positioning
+|cred-------------------
+        H4 {rt4}        H3 {rt3}
+   
+                   {rt8}
+  H5 {rt5}    |credGruul|r     H2 {rt2}
+                   {rt8}
+
+               H1 {rt1}
+          |cpurpleEntrance|r
+
+Notable abilities:
+|cred-------------------
+{icon trade_engineering} |credHurtful Strike:|r physical damage to second highest threat
+{icon inv_stone_11} |credGround Slam + {icon ability_bullrush} Shatter:|r AoE Knockback + proximity damage after 5s
+{icon spell_holy_improvedresistanceauras} |credReverberation:|r 4s AoE silence (every 40-56s)
+{icon ability_golemstormbolt} |credCave In:|r void zone with periodic damage, visible in debuffs, initial CD 30s and -1.5s each time it is cast
+{icon spell_shadow_charm} |credSoft enrage:|r +15% damage each 30s
+
+{tank} |cwarriorTanks
+|cred-------------------
+{rt6} + {rt7}, must be highest on aggro due to Hurtful Strike
+
+{dps} |crogueDPS:
+|cred-------------------
+Watch your aggro, don't go above tanks
+{hunter} |chunterHunters:|r Use {icon ability_hunter_misdirection}Misdirection on pull and periodically during the fight to help tanks with aggro
+
+{icon ability_creature_cursed_02} Spread after AoE knockback, |credat least 13yd (/range 13)
