@@ -675,8 +675,8 @@ local function EPGPSideFrameEPDropDown_Initialize(dropDown)
   local parent = dropDown:GetParent()
   local dungeons = {CalendarEventGetTextures(1)}
   for i=1,#dungeons,4 do
-    -- We want to show all CC raids
-    -- if dungeons[i+2] == 2 then
+    -- We want to show only TBC raids for now
+    if dungeons[i+2] == 1 then
       local info = UIDropDownMenu_CreateInfo()
       info.text = dungeons[i] .. " - " .. dungeons[i+3]
       info.func = function(self)
@@ -693,7 +693,7 @@ local function EPGPSideFrameEPDropDown_Initialize(dropDown)
                     end
                   end
       UIDropDownMenu_AddButton(info)
-    -- end
+    end
   end
 
   local info = UIDropDownMenu_CreateInfo()

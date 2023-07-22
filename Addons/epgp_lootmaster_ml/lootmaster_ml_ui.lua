@@ -750,7 +750,7 @@ function LootMasterML:CandidateDropDownInitialize( frame, level, menuList )
                 info.text = format( 'Give loot and award %s GP', loot.gpvalue_manual or 0 );
                 info.tooltipTitle = info.text;
                 info.tooltipText = format('Attempts to send the loot to the candidate and awards %s GP to the candidate', loot.gpvalue_manual or 0);
-                info.func = function() LootMasterML.GiveLootToCandidate(LootMasterML, LootMasterML.CandidateDropDown.selectedLink, LootMasterML.CandidateDropDown.selectedCandidate, LootMaster.LOOTTYPE.GP, loot.gpvalue_manual or 0) end;
+                info.func = function() Screenshot(); LootMasterML.GiveLootToCandidate(LootMasterML, LootMasterML.CandidateDropDown.selectedLink, LootMasterML.CandidateDropDown.selectedCandidate, LootMaster.LOOTTYPE.GP, loot.gpvalue_manual or 0) end;
                 UIDropDownMenu_AddButton(info,UIDROPDOWNMENU_MENU_LEVEL);
 
                 if loot.gpvalue2 and loot.gpvalue2~=0 then
@@ -759,7 +759,7 @@ function LootMasterML:CandidateDropDownInitialize( frame, level, menuList )
                     info.text = format( 'Give loot and award %s GP (100%%)', loot.gpvalue2 or 0 );
                     info.tooltipTitle = info.text;
                     info.tooltipText = format('Attempts to send the loot to the candidate and awards %s GP to the candidate', loot.gpvalue2 or 0);
-                    info.func = function() LootMasterML.GiveLootToCandidate(LootMasterML, LootMasterML.CandidateDropDown.selectedLink, LootMasterML.CandidateDropDown.selectedCandidate, LootMaster.LOOTTYPE.GP, loot.gpvalue2 or 0) end;
+                    info.func = function() Screenshot(); LootMasterML.GiveLootToCandidate(LootMasterML, LootMasterML.CandidateDropDown.selectedLink, LootMasterML.CandidateDropDown.selectedCandidate, LootMaster.LOOTTYPE.GP, loot.gpvalue2 or 0) end;
                     UIDropDownMenu_AddButton(info,UIDROPDOWNMENU_MENU_LEVEL);
                 end
 
@@ -782,7 +782,7 @@ function LootMasterML:CandidateDropDownInitialize( frame, level, menuList )
                       info.text = format( 'Give loot and award %s GP for %s (%s)', gp, btn.text, vs );
                       info.tooltipTitle = info.text;
                       info.tooltipText = format('Attempts to send the loot to the candidate and awards %s GP to the candidate for %s', gp, btn.text);
-                      info.func = function() LootMasterML.GiveLootToCandidate(LootMasterML, LootMasterML.CandidateDropDown.selectedLink, LootMasterML.CandidateDropDown.selectedCandidate, LootMaster.LOOTTYPE.GP, gp) end;
+                      info.func = function() Screenshot(); LootMasterML.GiveLootToCandidate(LootMasterML, LootMasterML.CandidateDropDown.selectedLink, LootMasterML.CandidateDropDown.selectedCandidate, LootMaster.LOOTTYPE.GP, gp) end;
                       UIDropDownMenu_AddButton(info,UIDROPDOWNMENU_MENU_LEVEL);
                     end
                 end
@@ -792,7 +792,7 @@ function LootMasterML:CandidateDropDownInitialize( frame, level, menuList )
                 info.text = 'Give loot for free';
                 info.tooltipTitle = 'Give loot for free';
                 info.tooltipText = "Attempts to send the loot to the candidate and doesn't award GP to the candidate, thus giving it for free.";
-                info.func = function() LootMasterML.GiveLootToCandidate(LootMasterML, LootMasterML.CandidateDropDown.selectedLink, LootMasterML.CandidateDropDown.selectedCandidate, LootMaster.LOOTTYPE.GP, 0 ) end;
+                info.func = function() Screenshot(); LootMasterML.GiveLootToCandidate(LootMasterML, LootMasterML.CandidateDropDown.selectedLink, LootMasterML.CandidateDropDown.selectedCandidate, LootMaster.LOOTTYPE.GP, 0 ) end;
                 UIDropDownMenu_AddButton(info,UIDROPDOWNMENU_MENU_LEVEL);
 
                 info.isTitle = false;
@@ -800,7 +800,7 @@ function LootMasterML:CandidateDropDownInitialize( frame, level, menuList )
                 info.text = 'Give loot for disenchantment';
                 info.tooltipTitle = 'Give loot for disenchantment';
                 info.tooltipText = 'Attempts to send the loot to the candidate for disenchantment.';
-                info.func = function() LootMasterML.GiveLootToCandidate(LootMasterML, LootMasterML.CandidateDropDown.selectedLink, LootMasterML.CandidateDropDown.selectedCandidate, LootMaster.LOOTTYPE.DISENCHANT ) end;
+                info.func = function() Screenshot(); LootMasterML.GiveLootToCandidate(LootMasterML, LootMasterML.CandidateDropDown.selectedLink, LootMasterML.CandidateDropDown.selectedCandidate, LootMaster.LOOTTYPE.DISENCHANT ) end;
                 UIDropDownMenu_AddButton(info,UIDROPDOWNMENU_MENU_LEVEL);
 
                 info.isTitle = false;
@@ -808,7 +808,7 @@ function LootMasterML:CandidateDropDownInitialize( frame, level, menuList )
                 info.text = 'Give loot for bank';
                 info.tooltipTitle = 'Give loot for bank';
                 info.tooltipText = 'Attempts to send the loot to the candidate for storage in bank.';
-                info.func = function() LootMasterML.GiveLootToCandidate(LootMasterML, LootMasterML.CandidateDropDown.selectedLink, LootMasterML.CandidateDropDown.selectedCandidate, LootMaster.LOOTTYPE.BANK ) end;
+                info.func = function() Screenshot(); LootMasterML.GiveLootToCandidate(LootMasterML, LootMasterML.CandidateDropDown.selectedLink, LootMasterML.CandidateDropDown.selectedCandidate, LootMaster.LOOTTYPE.BANK ) end;
                 UIDropDownMenu_AddButton(info,UIDROPDOWNMENU_MENU_LEVEL);
 
             else
