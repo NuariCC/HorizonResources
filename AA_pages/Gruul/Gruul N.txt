@@ -21,9 +21,10 @@ Notable abilities:
 |cred-------------------
 {rt6} + {rt7}, must be highest on aggro due to Hurtful Strike
 
-{dps} |crogueDPS:
+{dps} |crogueDPS
 |cred-------------------
 Watch your aggro, don't go above tanks
 {hunter} |chunterHunters:|r Use {icon ability_hunter_misdirection}Misdirection on pull and periodically during the fight to help tanks with aggro
+{shaman} |cshamanShamans:|r {bl}BL 5sec after pull
 
 {icon ability_creature_cursed_02} Spread after AoE knockback, |credat least 13yd (/range 13)

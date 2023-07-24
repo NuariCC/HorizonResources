@@ -73,6 +73,7 @@ L["Next award in "] = true
 L["Only display GP values for items at or above this quality."] = true
 L["Open the configuration options"] = true
 L["Open the debug window"] = true
+L["World Boss"] = true
 L["Other"] = true
 L["Paste import data here"] = true
 L["Personal Action Log"] = true

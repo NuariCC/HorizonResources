@@ -1,11 +1,10 @@
-Magtheridon
+Room layout
 |cred-------------------
-
+                  {rt8}
     G4 {rt4}  |credBoss|r  G3 {rt3}
                   {rt8}
 
  G5 {rt5}                   G2 {rt2}
- 
 
                G1 {rt1}
           |cpurpleEntrance|r
@@ -22,11 +21,13 @@ Myrep: {rt5}
 
 {icon ability_creature_cursed_02} |credP2 Cubes
 |cred-------------------
- - G1 {rt1}: Riddi >> Vik >> Moya >> Nuari
- - G2 {rt2}: Moguso >> Defacto >> Lyendra >> Zanzell
- - G3 {rt3}: Ratrat >> Helpts >> Camembert >> Nigel
- - G4 {rt4}: Emu >> Nada >> Belbereth >> Gamermag
- - G5 {rt5}: Elesshar >> Raaru >> Zelfie >> Helwex
+|cgreen30s|r debuff duration, single clicker per cube needed
+ - G1 {rt1}: Riddi
+ - G2 {rt2}: Moguso
+ - G3 {rt3}: Ratrat
+ - G4 {rt4}: Emu
+ - G5 {rt5}: Raaru
+ - |credBackup:|r Zelfie
 
 {warlock} |cwarlockWarlocks:|r {icon spell_shadow_cripple}Banish Abyssals in |cblueP1
-{shaman} |cshamanShamans:|r {bl}Bloodlust in |cblueP2|r right after successful cubes
+{shaman} |cshamanShamans:|r {bl}Bloodlust in |cblueP2|r right before successful cubes

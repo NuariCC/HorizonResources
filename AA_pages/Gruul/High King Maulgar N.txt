@@ -6,8 +6,8 @@ Kill order
 {rt2} Krosh Firehand: {icon spell_holy_excorcism_02}Blast Nova |cred(15yd AoE)|r, {icon spell_fire_flamebolt}Fireball, {icon spell_arcane_arcaneresilience}Spell Shield
 {rt3} Kiggler the Crazed: {icon spell_nature_wispsplode}Arcane Explosion |cred(30yd AoE)|r, {icon spell_nature_lightning}Lightning Bolt, {icon spell_arcane_arcane04}Silence, {icon spell_nature_polymorph}Polymorph
 |credMelee:
-{rt6} High King Maulgar: {icon ability_warrior_cleave}Cleave, {icon inv_gauntlets_05}Knockback, {icon ability_whirlwind}Whirlwind |cred(AoE)|r
-    - |credEnrage|r <50%: {icon ability_golemthunderclap}Fear |cred(8yd AoE)|r + {icon ability_warrior_charge}Charge
+{rt6} High King Maulgar: {icon ability_warrior_cleave}Cleave, {icon inv_gauntlets_05}Knockback, {icon ability_whirlwind}Whirlwind |cred(8yd AoE)|r
+    - |credEnrage|r <50% HP: {icon ability_golemthunderclap}Fear |cred(8yd AoE)|r + {icon ability_warrior_charge}Charge
 
 {tank} |cwarriorTanks:
 |cred-------------------
@@ -21,3 +21,5 @@ Kill order
 |cred-------------------
 {icon ability_creature_cursed_02} Don't go near {rt2} or {rt3}
 {icon ability_creature_cursed_02} Run away from {rt6} whirlwind
+
+{shaman} |cshamanShamans:|r |credNO BL|r, save for Gruul

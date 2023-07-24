@@ -697,6 +697,23 @@ local function EPGPSideFrameEPDropDown_Initialize(dropDown)
   end
 
   local info = UIDropDownMenu_CreateInfo()
+  info.text = L["World Boss"]
+  info.func = function(self)
+      UIDropDownMenu_SetSelectedID(dropDown, self:GetID())
+      parent.otherLabel:SetAlpha(0.25)
+      parent.otherEditBox:SetAlpha(0.25)
+      parent.otherEditBox:EnableKeyboard(false)
+      parent.otherEditBox:EnableMouse(false)
+      parent.otherEditBox:ClearFocus()
+      local reason = UIDropDownMenu_GetText(dropDown)
+      local last_award = EPGP.db.profile.last_awards[reason]
+      if last_award then
+        parent.editBox:SetText(last_award)
+      end
+    end
+  UIDropDownMenu_AddButton(info)
+
+  local info = UIDropDownMenu_CreateInfo()
   info.text = L["Other"]
   info.func = function(self)
                 UIDropDownMenu_SetSelectedID(dropDown, self:GetID())
