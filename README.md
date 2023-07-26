@@ -19,4 +19,4 @@ Modified Addons, WeakAuras and various other resources for the Horizon guild on 
 - A collection of default AA pages for Horizon raids. 
   These pages will most likely be useful only for the raid leaders, as they are the only ones able to edit and push the pages to the rest of the raiders.
   Note that the actual pages in-game might look a bit different as they will likely be polished and refined across multiple raid runs.
-- *How to setup:* either copy-paste the pages content to pages created in-game or copy the `SavedVariables.lua` to `<WoW folder>/WTF/Account/<Account name>/SavedVariables`.
+- *How to setup:* either copy-paste the pages content to pages created in-game or copy the `AngryAssignments.lua` to `<WoW folder>/WTF/Account/<Account name>/SavedVariables`.
