@@ -48,6 +48,20 @@ local EQUIPSLOT_MULTIPLIER_2 = {
   INVTYPE_RANGEDRIGHT = 0.5,
 }
 
+local CUSTOM_FIXED_PRICE_DATA = {
+  -- Nether Vortex
+  [30183] = { 50, "INVTYPE_HOLDABLE" },
+  -- Tier 5 - BoE recipes - BoP crafts
+  [30282] = { 100, "INVTYPE_HOLDABLE" },
+  [30283] = { 100, "INVTYPE_HOLDABLE" },
+  [30305] = { 100, "INVTYPE_HOLDABLE" },
+  [30306] = { 100, "INVTYPE_HOLDABLE" },
+  [30307] = { 100, "INVTYPE_HOLDABLE" },
+  [30308] = { 100, "INVTYPE_HOLDABLE" },
+  [30323] = { 100, "INVTYPE_HOLDABLE" },
+  [30324] = { 100, "INVTYPE_HOLDABLE" },
+}
+
 --Used to display GP values directly on tier tokens
 local CUSTOM_ITEM_DATA = {
   -- Tier 2.5
@@ -96,16 +110,6 @@ local CUSTOM_ITEM_DATA = {
   [30248] = { 4, 133, "INVTYPE_SHOULDER" },
   [30249] = { 4, 133, "INVTYPE_SHOULDER" },
   [30250] = { 4, 133, "INVTYPE_SHOULDER" },
-
-  -- Tier 5 - BoE recipes - BoP crafts
-  [30282] = { 4, 128, "INVTYPE_BOOTS" },
-  [30283] = { 4, 128, "INVTYPE_BOOTS" },
-  [30305] = { 4, 128, "INVTYPE_BOOTS" },
-  [30306] = { 4, 128, "INVTYPE_BOOTS" },
-  [30307] = { 4, 128, "INVTYPE_BOOTS" },
-  [30308] = { 4, 128, "INVTYPE_BOOTS" },
-  [30323] = { 4, 128, "INVTYPE_BOOTS" },
-  [30324] = { 4, 128, "INVTYPE_BOOTS" },
 
   -- Tier 6
   [31089] = { 4, 146, "INVTYPE_CHEST" },
@@ -305,6 +309,13 @@ function lib:GetValue(item)
   local itemID = itemLink:match("item:(%d+)")
   if not itemID then return end
   itemID = tonumber(itemID)
+
+  -- Check if this item has fixed price data bypassing the formula
+  if CUSTOM_FIXED_PRICE_DATA[itemID] then
+    price, equipLoc = unpack(CUSTOM_FIXED_PRICE_DATA[itemID])
+    UpdateRecentLoot(itemLink)
+    return price, nil, level, rarity, equipLoc
+  end
 
   -- Check to see if there is custom data for this item ID
   if CUSTOM_ITEM_DATA[itemID] then

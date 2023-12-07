@@ -120,7 +120,7 @@ StaticPopupDialogs["EPGP_LOG_ZERO_GP"] = {
 }
 
 StaticPopupDialogs["EPGP_DECAY_EPGP"] = {
-  text = L["Decay EP and GP by %d%%?"],
+  text = L["Decay EP by %d%% and GP by %d%%?"],
   button1 = ACCEPT,
   button2 = CANCEL,
   timeout = 0,
@@ -128,6 +128,26 @@ StaticPopupDialogs["EPGP_DECAY_EPGP"] = {
   whileDead = 1,
   OnAccept = function()
                EPGP:DecayEPGP()
+             end,
+
+  OnUpdate = function(self, elapsed)
+               if EPGP:CanDecayEPGP() then
+                 self.button1:Enable()
+               else
+                 self.button1:Disable()
+               end
+             end,
+}
+
+StaticPopupDialogs["TIER_EPGP_DECAY_EPGP"] = {
+  text = L["Decay EP by %d%% and GP by %d%%?"],
+  button1 = ACCEPT,
+  button2 = CANCEL,
+  timeout = 0,
+  hideOnEscape = 1,
+  whileDead = 1,
+  OnAccept = function()
+               EPGP:TierDecayEPGP()
              end,
 
   OnUpdate = function(self, elapsed)

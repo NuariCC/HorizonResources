@@ -314,6 +314,8 @@ end
 -- block. Possible options are:
 --
 -- @DECAY_P:<number>
+-- @TIER_DECAY_EP_P:<number>
+-- @TIER_DECAY_GP_P:<number>
 -- @EXTRAS_P:<number>
 -- @MIN_EP:<number>
 -- @BASE_GP:<number>
@@ -325,6 +327,20 @@ local global_config_defs = {
     error = L["Decay Percent should be a number between 0 and 100"],
     default = 0,
     change_message = "DecayPercentChanged",
+  },
+  tierEPdecay_p = {
+    pattern = "@TIER_DECAY_EP_P:(%d+)",
+    parser = tonumber,
+    validator = function(v) return v >= 0 and v <= 100 end,
+    error = L["Decay Percent should be a number between 0 and 100"],
+    default = 0,
+  },
+  tierGPdecay_p = {
+    pattern = "@TIER_DECAY_GP_P:(%d+)",
+    parser = tonumber,
+    validator = function(v) return v >= 0 and v <= 100 end,
+    error = L["Decay Percent should be a number between 0 and 100"],
+    default = 0,
   },
   extras_p = {
     pattern = "@EXTRAS_P:(%d+)",
@@ -625,13 +641,13 @@ function EPGP:CanDecayEPGP()
   return true
 end
 
-local function DecayDelayedCoroutine(decay, reason)
+local function DecayDelayedCoroutine(epDecay, gpDecay, reason)
   EPGP:Print("Decay starting, please do not log off or exit the game until the decay is completed.")
   for name,_ in pairs(ep_data) do
     local ep, gp, main = EPGP:GetEPGP(name)
     assert(main == nil, "Corrupt alt data!")
-    local decay_ep = math.ceil(ep * decay)
-    local decay_gp = math.ceil(gp * decay)
+    local decay_ep = math.ceil(ep * epDecay)
+    local decay_gp = math.ceil(gp * gpDecay)
     decay_ep, decay_gp = AddEPGP(name, -decay_ep, -decay_gp)
     if decay_ep ~= 0 then
       callbacks:Fire("EPAward", name, reason, decay_ep, true)
@@ -641,7 +657,7 @@ local function DecayDelayedCoroutine(decay, reason)
     end
     Coroutine:Sleep(0.1)
   end
-  callbacks:Fire("Decay", global_config.decay_p)
+  callbacks:Fire("Decay", global_config.tierEPdecay_p, global_config.tierGPdecay_p)
 end
 
 function EPGP:DecayEPGP()
@@ -650,21 +666,17 @@ function EPGP:DecayEPGP()
   local decay = global_config.decay_p  * 0.01
   local reason = string.format("Decay %d%%", global_config.decay_p)
   -- CC Update: Introduce delay after each decayed player to avoid too many note edits too fast 
-  Coroutine:RunAsync(DecayDelayedCoroutine, decay, reason)
-  -- for name,_ in pairs(ep_data) do
-  --   local ep, gp, main = self:GetEPGP(name)
-  --   assert(main == nil, "Corrupt alt data!")
-  --   local decay_ep = math.ceil(ep * decay)
-  --   local decay_gp = math.ceil(gp * decay)
-  --   decay_ep, decay_gp = AddEPGP(name, -decay_ep, -decay_gp)
-  --   if decay_ep ~= 0 then
-  --     callbacks:Fire("EPAward", name, reason, decay_ep, true)
-  --   end
-  --   if decay_gp ~= 0 then
-  --     callbacks:Fire("GPAward", name, reason, decay_gp, true)
-  --   end
-  -- end
-  -- callbacks:Fire("Decay", global_config.decay_p)
+  Coroutine:RunAsync(DecayDelayedCoroutine, decay, decay, reason)
+end
+
+function EPGP:TierDecayEPGP()
+  assert(EPGP:CanDecayEPGP())
+
+  local epDecay = global_config.tierEPdecay_p  * 0.01
+  local gpDecay = global_config.tierGPdecay_p  * 0.01
+  local reason = string.format("Tier Decay EP %d%% and GP %d%%", global_config.tierEPdecay_p, global_config.tierGPdecay_p)
+  -- CC Update: Introduce delay after each decayed player to avoid too many note edits too fast 
+  Coroutine:RunAsync(DecayDelayedCoroutine, epDecay, gpDecay, reason)
 end
 
 function EPGP:GetEPGP(name)
@@ -791,6 +803,14 @@ end
 
 function EPGP:GetDecayPercent()
   return global_config.decay_p
+end
+
+function EPGP:GetTierEPDecayPercent()
+  return global_config.tierEPdecay_p
+end
+
+function EPGP:GetTierGPDecayPercent()
+  return global_config.tierGPdecay_p
 end
 
 function EPGP:GetExtrasPercent()

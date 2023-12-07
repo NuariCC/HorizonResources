@@ -1167,9 +1167,32 @@ local function CreateEPGPFrameStandings()
   decay:SetScript(
     "OnClick",
     function(self, button, down)
-      StaticPopup_Show("EPGP_DECAY_EPGP", EPGP:GetDecayPercent())
+      StaticPopup_Show("EPGP_DECAY_EPGP", EPGP:GetDecayPercent(), EPGP:GetDecayPercent())
     end)
   decay:SetScript(
+    "OnUpdate",
+    function(self)
+      if EPGP:CanDecayEPGP() then
+        self:Enable()
+      else
+        self:Disable()
+      end
+    end)
+
+  local tierDecay = CreateFrame("Button", nil, main, "UIPanelButtonTemplate")
+  tierDecay:SetNormalFontObject("GameFontNormalSmall")
+  tierDecay:SetHighlightFontObject("GameFontHighlightSmall")
+  tierDecay:SetDisabledFontObject("GameFontDisableSmall")
+  tierDecay:SetHeight(BUTTON_HEIGHT)
+  tierDecay:SetPoint("RIGHT", decay, "LEFT")
+  tierDecay:SetText(L["Tier Decay"])
+  tierDecay:SetWidth(tierDecay:GetTextWidth() + BUTTON_TEXT_PADDING)
+  tierDecay:SetScript(
+    "OnClick",
+    function(self, button, down)
+      StaticPopup_Show("TIER_EPGP_DECAY_EPGP", EPGP:GetTierEPDecayPercent(), EPGP:GetTierGPDecayPercent())
+    end)
+  tierDecay:SetScript(
     "OnUpdate",
     function(self)
       if EPGP:CanDecayEPGP() then
@@ -1185,7 +1208,7 @@ local function CreateEPGPFrameStandings()
   recurringTime:SetHeight(fontHeight)
   recurringTime:SetJustifyH("CENTER")
   recurringTime:SetPoint("LEFT", award, "RIGHT")
-  recurringTime:SetPoint("RIGHT", decay, "LEFT")
+  recurringTime:SetPoint("RIGHT", tierDecay, "LEFT")
   recurringTime:Hide()
   function recurringTime:StartRecurringAward()
     self:Show()

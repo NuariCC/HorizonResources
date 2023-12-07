@@ -92,8 +92,8 @@ function mod:MassEPAward(event_name, names, reason, amount,
   end
 end
 
-function mod:Decay(event_name, decay_p)
-  mod:Announce(L["Decay of EP/GP by %d%%"], decay_p)
+function mod:Decay(event_name, epDecay_p, gpDecay_p)
+  mod:Announce(L["Decay of EP/GP by %d%%/%d%%"], epDecay_p, gpDecay_p)
 end
 
 function mod:StartRecurringAward(event_name, reason, amount, mins)

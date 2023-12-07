@@ -40,6 +40,20 @@ local EQUIPSLOT_MULTIPLIER_2 = {
   INVTYPE_RANGEDRIGHT = 0.5,
 }
 
+local CUSTOM_FIXED_PRICE_DATA = {
+  -- Nether Vortex
+  [30183] = { 50, "INVTYPE_HOLDABLE" },
+  -- Tier 5 - BoE recipes - BoP crafts
+  [30282] = { 100, "INVTYPE_HOLDABLE" },
+  [30283] = { 100, "INVTYPE_HOLDABLE" },
+  [30305] = { 100, "INVTYPE_HOLDABLE" },
+  [30306] = { 100, "INVTYPE_HOLDABLE" },
+  [30307] = { 100, "INVTYPE_HOLDABLE" },
+  [30308] = { 100, "INVTYPE_HOLDABLE" },
+  [30323] = { 100, "INVTYPE_HOLDABLE" },
+  [30324] = { 100, "INVTYPE_HOLDABLE" },
+}
+
 --Used to display GP values directly on tier tokens
 local CUSTOM_ITEM_DATA = {
   -- Tier 4
@@ -248,6 +262,12 @@ GetGPValue = function (itemLink)
   else
     _, _, rarity, level, _, _, _, _, equipLoc = GetItemInfo(itemLink)
   end
+  
+  -- Check if this item has fixed price data bypassing the formula
+  if CUSTOM_FIXED_PRICE_DATA[itemID] then
+    price, equipLoc = unpack(CUSTOM_FIXED_PRICE_DATA[itemID])
+    return price, nil, level, rarity, equipLoc
+  end
 
   -- Non-rare and above items do not have GP value
   if rarity and rarity < 2 then
@@ -257,8 +277,40 @@ GetGPValue = function (itemLink)
   local slot_multiplier1 = EQUIPSLOT_MULTIPLIER_1[equipLoc]
   local slot_multiplier2 = EQUIPSLOT_MULTIPLIER_2[equipLoc]
 
-  if not slot_multiplier1 then return nil, nil, level, rarity, equipLoc end
-  local gp_base = 0.483 * 2 ^ (level/26 + (rarity - 4))
+  if not slot_multiplier1 then
+    return nil, nil, level, rarity, equipLoc
+  end
+  -- 3.3.5 GP calculation formula --
+  -- local gp_base = 0.483 * 2 ^ (level/26 + (rarity - 4))
+
+  -- EPGPClassic 1.13.6 GP formula 
+  -- Temporary hardcoded the values according to the AQ content
+  -- local multiplier = baseGP * 2 ^ (-standardIlvl / ilvlDenominator)
+  -- if rarity == 5 then multiplier = multiplier * vars.legendaryScale end
+  -- local gpBase = multiplier * 2 ^ (ilvl / ilvlDenominator)
+
+  local standardIlvl
+  local ilvlDenominator
+  local gp_base
+
+  -- Wotlk 3.3.5, simplified formula
+  if level >= 200 then
+    gp_base = 0.483 * 2 ^ (level/26 + (rarity - 4))
+  else
+    -- TBC
+    if level >= 100 then
+      standardIlvl = 120
+      ilvlDenominator = 13
+    -- Classic AQ Tier
+    else
+      standardIlvl = 76
+      ilvlDenominator = 10
+    end
+    -- The formula is the same for Vanilla and TBC
+    local multiplier = 100 * 2 ^ (-standardIlvl/ilvlDenominator)
+    if rarity == 5 then multiplier = multiplier * 3 end
+    gp_base = multiplier * 2 ^ (level/ilvlDenominator)
+  end
   local high = math.floor(gp_base * slot_multiplier1)
   local low = slot_multiplier2 and math.floor(gp_base * slot_multiplier2) or nil
   return high, low, level, rarity, equipLoc

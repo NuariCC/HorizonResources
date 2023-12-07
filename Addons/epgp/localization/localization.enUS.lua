@@ -35,10 +35,11 @@ L["Boss"] = true
 L["Credit GP to %s"] = true
 L["Credit GP"] = true
 L["Custom announce channel name"] = true
-L["Decay EP and GP by %d%%?"] = true
+L["Decay EP by %d%% and GP by %d%%?"] = true
 L["Decay Percent should be a number between 0 and 100"] = true
-L["Decay of EP/GP by %d%%"] = true
+L["Decay of EP/GP by %d%%/%d%%"] = true
 L["Decay"] = true
+L["Tier Decay"] = true
 L["Decay=%s%% BaseGP=%s MinEP=%s Extras=%s%%"] = true
 L["Do you want to resume recurring award (%s) %d EP/%s?"] = true
 L["EP Reason"] = true

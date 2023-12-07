@@ -126,7 +126,7 @@ function EPGP:ProcessCommand(str)
     end
   elseif command == "decay" then
     if EPGP:CanDecayEPGP() then
-      StaticPopup_Show("EPGP_DECAY_EPGP", EPGP:GetDecayPercent())
+      StaticPopup_Show("EPGP_DECAY_EPGP", EPGP:GetDecayPercent(), EPGP:GetDecayPercent())
     end
   elseif command == "help" then
     local help = {
