@@ -1,0 +1,36 @@
+{tank} Vashj is tauntable and can be moved around.
+
+|cbluePhase 1, Warmup (100% - 70%):|r
+ - |corangeThe raid should spread out and get in position for P2.|r
+ - {icon ability_upgrademoonglaive} |cyellowMulti-Shot:|r AoE (up to 5 players) 7k |cwarriorphysical|r dmg.
+ - {icon spell_nature_wispheal} |cyellowShock Blast:|r 8.5k |cgreennature|r dmg on primary target, 5s stun.
+   - Can be nullified using {icon spell_nature_groundingtotem} Grounding Totem!
+ - {icon spell_nature_stranglevines} |cyellowEntangle:|r 15yd AoE 10s root + 500/2s DoT.
+ - {icon spell_nature_lightningoverload} |credStatic Charge:|r 20s debuff on random player.
+   - Zaps everyone for 1.6k |cgreennature|r dmg in 10yd radius.
+
+|cbluePhase 2, Control and Endurance (70% - 50%):|r
+ - |corangeVashj is immune to dmg.|r
+ - |corangeWill become active after all 4 pylons are deactivated.|r
+ - |corangePylon is deactivated once Tainted Core is used on it.|r
+ 
+ - {icon spell_nature_chainlightning} |cyellowForked Lightning:|r 2s cast 2.5k |cgreennature|r dmg in random cone.
+ - 4 types of adds:
+   - |cyellowEnchanted Elemental:|r low hp, immune to |cbluefrost|r and |cyellowCC|r.
+     - Buffs Vashj if they reach her (+5% dmg).
+   - |cyellowCoilfang Elite:|r {tank} high hp, tauntable, |credcleave|r {icon ability_creature_cursed_02}.
+   - |cyellowCoilfang Strider:|r {hunter} high hp, tauntable, high melee dmg.
+     - {icon spell_shadow_psychicscream} |credPanic:|r 8yd AoE 4s fear. Uses all the time.
+     - {icon spell_shadow_unholyfrenzy} |cyellowMind Blast:|r on main target for 2.5k |cwarlockshadow|r dmg.
+     - Must be kited until killed.
+   - |credTainted Elemental:|r low hp, stationary, immune to |cbluefrost|r dmg.
+     - Spawns every 50s. |credDespawns|r after 15s.
+     - {icon spell_nature_corrosivebreath} |cyellowPoison Bolt:|r 2k |cgreennature|r dmg + 2k |cgreennature|r/4s DoT for 8s.
+     - |corangeDrops Tainted Core when killed.|r
+     - |corangePlayers with Core cannot move but can throw the Core!|r
+
+|cbluePhase 3, DPS race (50% - 0%):|r
+ - |credAggro reset on start {icon ability_creature_cursed_02}!|r
+ - Same |cyellowabilities|r as in |cblueP1|r.
+ - |credToxic Sporebats|r spawn increasingly faster.
+   - {icon spell_nature_abolishmagic} |cyellowToxic Spores:|r 5yd 30s poison patch. 2.5k |cgreennature|r dmg/1s.

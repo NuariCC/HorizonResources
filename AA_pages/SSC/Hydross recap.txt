@@ -1,0 +1,25 @@
+Hydross has 2 phases: {rt6}|cblueFrost|r and {rt4}|cgreenPoison|r.
+{tank} Hydross is |credtaunt immune|r!
+{tank} Adds can be taunted.
+
+When |corangephase transition happens|r:
+ - Hydross {icon ability_creature_cursed_02}|credresets aggro|r.
+ - Summons 4 {rt6}/{rt4} elementals.
+
+|corangeThe boss transitions between the phases when he crosses an imaginary line between the two flags on the sides.|r
+
+{rt6} |cblueFrost phase.|r
+ - Boss + elementals do |cbluefrost|r damage.
+ - Boss + elementals are |credimmune|r to frost damage
+ - {icon spell_frost_frozencore}|cyellowMark of Hydross|r applied on everyone (|cyellow100yd|r) every 15s.
+   - Increases |cbluefrost|r dmg taken by 10/25/50/100/250/500%.
+ - {icon spell_frost_manarecharge}|cyellowWater Tomb|r on a random player |credand 5yd AoE radius|r.
+   - 5s stun + 900 |cbluefrost|r dmg/1s.
+
+{rt4} |cgreenPoison phase.|r
+ - Boss + elementals do |cgreennature|r damage.
+ - Boss + elementals are |credimmune|r to nature damage
+ - {icon spell_nature_elementalshields}|cyellowMark of Corruption|r applied on everyone (|cyellow100yd|r) every 15s.
+   - Increases |cgreennature|r dmg taken by 10/25/50/100/250/500%.
+ - {icon spell_nature_abolishmagic}|cyellowVile Sludge|r on a random player only.
+   - 24s, 50% healing and dmg, 500 |cgreennature|r dmg/3s

@@ -1,0 +1,34 @@
+Council fight. Adds must die before the boss.
+If boss HP < 75%, he gains a |credhuge buff for each add alive.|r
+{tank} Boss and adds can be taunted.
+|corangeEach dead add gives boss a new ability.|r
+
+|cshamanFathom-Lord Tidalvess (Shaman)|r
+ - Has |cyellowWindfury weapon|r, uses {icon spell_frost_frostshock} |cyellowFrost shock|r (6k |cbluefrost|r dmg).
+ - Spawns totems:
+   - |cyellowPoison Cleansing|r + |cyellowEarthbind totems|r: easy to kill.
+   - |credSpitfire Totem:|r periodic 3k |credfire|r dmg to 5 random players.
+
+|chunterFathom-Guard Sharkkis (Hunter)|r
+ - {icon ability_upgrademoonglaive} |cyellowMulti-Toss:|r multishot ability, 3 players, 4k |cwarriorphysical|r dmg.
+ - {icon ability_marksmanship} |cyellowHurl Trident:|r single target shot, 3.6k |cwarriorphysical|r dmg.
+ - {icon ability_hunter_aimedshot} |credLeeching Throw:|r Drains 3k mana and hp over 12s.
+   - Cannot be dispelled!
+ - {icon ability_hunter_beastwithin} |cyellowThe Beast Within:|r 18s enrage for him (30%) and pet (50%).
+ - {icon ability_hunter_pet_sporebat} |cyellowSummon pet:|r Boglord (|credexplodes|r) or Sporebat (knockbacks).
+
+|cpriestFathom-Guard Caribdis (Priest)|r
+ - {icon spell_frost_frostbolt} |cyellowWater Bolt Volley:|r 45yd AoE, 3k |cbluefrost|r dmg.
+ - {icon spell_frost_summonwaterelemental} |cyellowTidal Surge:|r 10yd AoE, 4s stun, 1.6k |cbluefrost|r dmg.
+ - {icon spell_nature_magicimmunity} |credHealing Wave:|r 0.85s cast, 110k heal, unlimited range.
+ - {icon spell_nature_cyclone} |cyellowSummon Cyclone:|r -50% cast speed if you get hit.
+
+|credFathom-Lord Karathress (Boss)|r
+ - {icon spell_shadow_shadowfury} |credCataclysmic Bolt:|r targets random |cbluemana|r user.
+   - Does 50% of target's HP as |cwarlockshadow|r dmg, knockback, stun.
+ - {icon spell_fire_sealoffire} |cyellowSear Nova:|r 8yd 3k |credfire|r dmg.
+
+ - |corangeGains abilities when adds die:|r
+   - |cyellowThe Beast Within|r (Hunter).
+   - |cyellowSpitfire Totem|r (Shaman).
+   - |cyellowTidal Surge|r (Priest).

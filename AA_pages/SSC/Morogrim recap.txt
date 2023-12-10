@@ -1,0 +1,20 @@
+2 phases: Watery Grave (|cyellow>25% hp|r) and Globules (|cyellow<25% hp|r).
+{tank} Can be taunted.
+
+|cblueAbilities:|r
+ - |corangeHas a frontal cone ability, must never face the raid.|r
+ - |corangeThe entire raid stacks behind the boss.|r
+ - {icon spell_frost_chillingblast} |credTidal Wave:|r frontal 4-5k |cbluefrost|r damage.
+   - |cyellowDispellable debuff:|r time between attacks +400%.
+ - {icon spell_nature_earthquake}|cyellowEarthquake|r: 4k |cwarriorphysical|r damage to the entire raid.
+   - Spawns murlock adds by each entrance. |credStack and AoE.|r
+ - {icon spell_shadow_demonbreath}|cyellowWatery Grave:|r teleports 4 random players to the waterfalls.
+   - 6s stun, 4k |cbluefrost|r damage + explode and fall damage.
+   - {healer} Healers need to top up low HP players.
+
+|cblueSub 25% hp:|r
+ - |corangeMorogrim must be kited so Globules never reach the raid.|r
+ - {icon spell_shadow_raisedead}|cyellowSummon Water Globule:|r used instead of |cyellowWatery Grave|r.
+   - 4 globules slowly moving to random players.
+   - {icon spell_frost_glacier} |credFreeze:|r when they reach a player {icon ability_creature_cursed_02}.
+      - |cred5yd AoE|r, 6.5k |cbluefrost|r damage, 8s stun.

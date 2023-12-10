@@ -1,0 +1,26 @@
+2 phases: surface (|cyellow120s|r) and submerged (|cyellow60s|r).
+{tank} Can be taunted.
+
+|cblueSurface phase:|r
+ - |corangeLurker is stationary in his little pool.|r
+ - {icon spell_magic_magearmor} |cyellowWhirl:|r melee AoE knockback + damage.
+ - {icon spell_frost_frostblast} |cyellowGeyser:|r random player + 10yd radius
+   - 3.5k |cbluefrost|r damage, 10yd knockback
+ - {icon spell_frost_chillingblast} |credSpout: Lurker's deep breath.|r
+   - 3s cast, rotates around the room (counter)clockwise.
+   - Will likely |credkill you {icon ability_creature_cursed_02} upon hit|r and knock you back (60yd).
+   - Avoid by jumping into the water, beware the piranhas.
+ - {icon spell_ice_magicdamage} |credWater bolt:|r only used when no target is in melee.
+   - 1s cast, 9 - 11k |cbluefrost|r damage to random target
+
+|cblueSubmerge phase:|r
+ - |corange9 adds spawn. Lurker submerges and cannot be attacked.|r
+ - All the adds can be CC'd. There can only ever be at most 9 adds at the same time, so |credalive but CC'd adds won't be replaced|r when new submerge phase starts!
+ - |cyellow3 Coilfang Guardians|r spawn on the inner ring platform.
+   - Melee mobs, must be tanked.
+   - {icon ability_shockwave} Hamstring.
+   - {icon ability_warrior_cleave} |credCleave|r {icon ability_creature_cursed_02}.
+ - |cyellow6 Coilfang Ambushers|r, 2 on each outer platform.
+   - Cannot be tanked.   
+   - Low melee/ranged damage.
+   - {icon ability_upgrademoonglaive} |credSpread Shot:|r 3.5k |cwarriorphysical|r multishot-like ability.

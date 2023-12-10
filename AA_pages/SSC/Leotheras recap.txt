@@ -1,0 +1,24 @@
+3 phases: Human (|cyellow45s|r), Demon (|cyellow60s|r) and Split (|cyellow<15% hp|r) form.
+|credResets threat|r after each transition and |cyellowWhirlwind|r.
+{tank} Leotheras is |credimmune|r to taunt in both forms.
+
+|cblueHuman form:|r
+ - |corangeFocus on survival rather than DPS. Whirlwind can be deadly.|r
+ - {icon ability_whirlwind} |credWhirlwind:|r spins around the room for 12s.
+   - Very similar to Sartura in AQ40.
+   - Randomly switches targets and moves towards them.
+   - 3k initial |cwarriorphysical|r damage, |cred15s bleed for 2.5k/3s|r {icon ability_creature_cursed_02}
+
+|cblueDemon form:|r
+ - |corangeStationary, requires a fire resist tank.|corange
+ - {icon spell_fire_felflamebolt} |cyellowChaos Blast:|r 2s cast on highest threat.
+   - |credAoE|r 100 fire dmg + stackable debuff (+1675 fire dmg taken).
+ - {icon spell_shadow_manafeed} |cyellowInner Demon:|r targets 5 random raid members.
+   - Spawns an add, only the targeted player can attack the add!
+   - Take |cgreen65% more|r holy, arcane, nature damage.
+   - Take |cred20% less|r shadow and fire damage.
+
+|cblueSplit form:|r
+ - |corangeBoth Human and Demon are active at the same time.|r
+ - {bl} |credBurn phase|r, focus Human form.
+ - No more |cyellowInner Demons|r.
