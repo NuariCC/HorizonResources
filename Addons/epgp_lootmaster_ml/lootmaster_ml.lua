@@ -41,6 +41,20 @@ StaticPopupDialogs["EPGPLOOTMASTER_ASK_TRACKING"] = {
     showAlert = 1
 }
 
+
+local ignored_items = {
+    [30280] = true; -- Belt of Blasting
+    [30281] = true; -- Belt of the Long Road
+    [30301] = true; -- Belt of Natural Power
+    [30302] = true; -- Belt of Deep Shadow
+    [30303] = true; -- Belt of the Black Eagle
+    [30304] = true; -- Monsoon Belt
+    [30321] = true; -- Belt of the Guardian
+    [30322] = true; -- Red Belt of Battle
+  }
+  
+
+
 function LootMasterML:Debug( message, verbose )
     if not LootMaster or not LootMaster.debug then return end;
     if verbose and not LootMaster.verbose then return end;
@@ -1836,6 +1850,8 @@ function LootMasterML:OPEN_MASTER_LOOT_LIST()
         self:Print( format('Could not get itemcount for %s (no itemid found)', tostring(link)) );
         totalQuantity = 1
     end
+
+    if ignored_items[itemID] then return end
 
     -- Another sanity check... Check total quantity > 1
     if totalQuantity<1 then
